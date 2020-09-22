@@ -99,6 +99,9 @@ author:
   location         : "ICMAT, Madrid, Spain"
   email            : "manuel.lainz@icmat.es"
   links:
+    - label: "ICMAT profile"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.icmat.es/manuel.lainz"
     - label: "ORCID"
       icon: "ai ai-fw ai-orcid-square"
       url: "https://orcid.org/0000-0002-2368-5853"
@@ -116,26 +119,14 @@ author:
       url: "https://gitlab.com/mlainz"
 
 # Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+# footer:
+  # links:
+  #   - label: "Twitter"
+  #     icon: "fab fa-fw fa-twitter-square"
+  #     # url:
+  #   - label: "Facebook"
+  #     icon: "fab fa-fw fa-facebook-square"
+  #     # url:
 
 
 # Reading Files
@@ -204,9 +195,9 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#paginate: 5 # amount of posts to show
+#paginate_path: /page:num/
+timezone: Europe/Madrid
 
 
 # Plugins (previously gems:)
@@ -216,6 +207,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-scholar
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -276,3 +268,20 @@ defaults:
       comments: # true
       share: true
       related: true
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Bibliography
+scholar:
+  style: apa
+  locale: en
+  source: ./_bibliography
+  bibliography : my_publications.bib
+  sort_by: year,month
+  order: descending 
