@@ -94,8 +94,8 @@ analytics:
 # Site Author
 author:
   name             : "Manuel Lainz"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
- # bio              : "I am an **amazing** person."
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : ""
   location         : "ICMAT, Madrid, Spain"
   email            : "manuel.lainz@icmat.es"
   links:
