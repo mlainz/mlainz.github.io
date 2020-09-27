@@ -4,5 +4,39 @@
 
 @charset "utf-8";
 
+// Custom extra colors
+$icmat-orange : #F8AC00 !default;
+$tshirt-blue : #62729b !default;
+
+// Custom Fonts
+$helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+$fira-sans: 'Fira Sans', sans-serif !default;
+
+// Modify _variables.scss
+$primary-color: $tshirt-blue;
+$info-color: $icmat-orange !default;
+$header-font-family: $fira-sans !default;
+$sans-serif-narrow: $fira-sans !default;
+
+$muted-text-color: mix(#fff, $tshirt-blue, 20%) !default;
+
+
+// Modify _base.scss
+h1 {
+    color: $tshirt-blue;
+}
+
+// Modify _navigation.scss
+
+
+// Load files
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Modify _sidebar.scss
+.sidebar .author__name {
+    color: $tshirt-blue;
+    font-family: $header-font-family;
+    font-size: 1.125em;
+}
