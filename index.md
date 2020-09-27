@@ -4,7 +4,6 @@ author_profile: true
 permalink: /
 title: "About me"
 ---
-<br />
 
 Currently writing my PHD thesis at ICMAT, supervised by Prof. Manuel de León. I studied Mathematics and Physics in Universidad de Cantabria, including a one year stay in Princeton University, where I learned about critical phenomena in planar models and other related topics in statistical mechanics. After that, I moved to Madrid and I attended to the master of Mathematics at UAM.
 
