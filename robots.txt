@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mlainz.github.io/sitemap.xml
