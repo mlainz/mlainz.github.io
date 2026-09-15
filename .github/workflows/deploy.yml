@@ -101,6 +101,10 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Disable Jekyll on gh-pages 🚫
+        # _site is already built; without .nojekyll GitHub Pages re-runs Jekyll on
+        # it, which chokes on vendored JS containing {{ }} and leaves the site 404.
+        run: touch _site/.nojekyll
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
