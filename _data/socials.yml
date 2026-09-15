@@ -1,0 +1,12 @@
+# Social links, shown in the site footer and the about-page profile.
+cv_pdf: /assets/pdf/cv.pdf
+email: manuel.lainz@cunef.edu
+orcid_id: 0000-0002-2368-5853
+scholar_userid: EY6HDoUAAAAJ
+github_username: mlainz
+gitlab_username: mlainz
+rss_icon: false
+custom_social:
+  logo: https://arxiv.org/favicon.ico
+  title: arXiv
+  url: https://arxiv.org/a/0000-0002-2368-5853.html
